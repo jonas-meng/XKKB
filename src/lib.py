@@ -214,6 +214,7 @@ class BTKTron:
                 current_owner = account
                 # remove the amount left in current account
                 transfer_amount = transfer_amount - amount
+                continue
 
             # set current account as the receiver account
             current_to = account
