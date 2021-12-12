@@ -27,5 +27,11 @@ def set_up():
     remote_execute(cmd)
 
 
+def execute_main():
+    cmd = "cd /root/cryptolab && git pull https://github.com/jonas-meng/XKKB.git &&" \
+          "python3 src/main.py"
+    remote_execute(cmd)
+
+
 if __name__ == "__main__":
-    set_up()
+    execute_main()
